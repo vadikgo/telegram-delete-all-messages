@@ -24,7 +24,7 @@ class Cleaner:
 
     def select_supergroup(self):
         dialogs = app.get_dialogs()
-        groups = [x for x in dialogs.dialogs if x.chat.type == 'supergroup']
+        groups = [x for x in dialogs if x.chat.type == 'supergroup']
 
         for i, group in enumerate(groups):
             print(f'{i+1}. {group.chat.title}')
